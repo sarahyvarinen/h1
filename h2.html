@@ -37,19 +37,38 @@
     <h1>Tehtävä h2</h1>
   </header>
   <main>
-    <h2>a</h2>
-    <p>Harjoituksessa avattiin web-lomake selaimessa, jossa kysyttiin PIN-koodia. Suoritin tehtävän Linux debian 13 "Trixie" ympäristössä.</p> 
+    <h1>x</h1>
+    <p>a.Broken access control = Käyttäjä pääsee ohjelmassa esiintyneen vian/heikkouden kautta käsiksi tietoihin jotka eivät ole tarkoitettu hänen nähtävikseen.</p>
+    <p>b.Fuff = työkalu, jonka avulla käyttäjä voi etsiä piilotettuja hakemistoja. Teksitssä viitattiin myös "fuzzaukseen".</p>
+    <p> Se on keino pommittaa nettisivua isolla määrällä dataa, joka aiheuttaa todennäköisesti sen kaatumisen.</p>
+    <p>c.Hyvään ja helppolukuiseen raporttiin on selkeästi merkattu tehtävän suoritusajat ja ympäristö.</p>
+    <p>Tämä tapahtuu seuraten huolellisesti annettuja raportointi ohjeita ja pitäen kiinni siististä kirjoitusasusta.</p>
+    
+    <h2>Testaus ympäristö:</h2>
+    <p>Käytin testaus ja työskentely ympäristönä omaa Windows läppäriäni, johon olen asentanut Virtual Boxiin Debianin.</p>
+    <p>Debianin malli on 13.0, tutummin "Trixie". Trixien ympäristönä toimii "Xfce 4.20".</p>
+    <p>Koneella on käytössä 20.0 gb levytilaa.</p>
+    <p>Selaimena toimi Firefox.</p>
+    
+    <h3>a</h3>
+    <p>Harjoituksessa avattiin web-lomake selaimessa, jossa kysyttiin PIN-koodia. </p> 
     <p>Lomake oli type="number", joten tekstiä ei voinut kirjoittaa.</p>
     <p>Käytin selaimen Inspector-työkalua ja kirjoitin suoraan "number" arvon tilalle "text". Sillä tavalla en kuitenkaan päässyt kovin pitkälle, joten tutkin annettua vihjettä sql injektiosta.</p>
     <p>Minulta meni melko pitkään kokeilla erilaisia yhdistelmiä, hyödyntäen Portswigger Academyn sekä Brightsecin lähteitä, sain aikaan lauseen "' UNION SELECT password FROM pins-- ". </p>
     <p>Laitoin tämän lauseen "value" arvoksi. Aikaa vei paljon se, etten tajunnut heti käyttää kahta viivaa lopussa. </p>
     <p>Lippu oli SUPERADMIN%rootALL-FLAG{Tero-e45f8764675e4463db969473b9b0fcdd}</p>
 
-    <h3>b</h3>
+    <h4>b</h4>
     <p>Uskoisin, että vian voi korjata tekemällä koodista parametrisoidun.</p>
     <p>Tarkoittaen että arvot eivät tulisi suoraan käyttäjältä, vaan ne olisivat määriteltynä parametreina. </p>
     <p>En kuitenkaan enää saanut tätä korjausta toimivaksi, joten en voi sitä aukottomasti todentaa.</p>
     
+    <h5>Lähteet</h5>
+    <p>Portswigger "SQL injections and UNION attacks, https://portswigger.net/web-security/sql-injection/union-attacks</p>
+    <p>Brightsec https://brightsec.com/blog/union-sql-injection/</p>
+    <p>Kurssin nettisivut: https://terokarvinen.com/sovellusten-hakkerointi/</p>
+    <p>Github lab artikkeli fuzz testauksesta: https://about.gitlab.com/topics/devsecops/what-is-fuzz-testing/</p>
+
   </main>
   
   
