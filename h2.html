@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä h1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tehtävä h2</h1>
+  </header>
+  <main>
+    <h2>a</h2>
+    <p>Harjoituksessa avattiin web-lomake selaimessa, jossa kysyttiin PIN-koodia. Suoritin tehtävän Linux debian 13 "Trixie" ympäristössä.</p> 
+    <p>Lomake oli type="number", joten tekstiä ei voinut kirjoittaa.</p>
+    <p>Käytin selaimen Inspector-työkalua ja kirjoitin suoraan "number" arvon tilalle "text". Sillä tavalla en kuitenkaan päässyt kovin pitkälle, joten tutkin annettua vihjettä sql injektiosta.</p>
+    <p>Minulta meni melko pitkään kokeilla erilaisia yhdistelmiä, hyödyntäen Portswigger Academyn sekä Brightsecin lähteitä, sain aikaan lauseen "' UNION SELECT password FROM pins-- ". </p>
+    <p>Laitoin tämän lauseen "value" arvoksi. Aikaa vei paljon se, etten tajunnut heti käyttää kahta viivaa lopussa. </p>
+    <p>Lippu oli SUPERADMIN%rootALL-FLAG{Tero-e45f8764675e4463db969473b9b0fcdd}</p>
+
+    <h3>b</h3>
+    <p>Uskoisin, että vian voi korjata tekemällä koodista parametrisoidun.</p>
+    <p>Tarkoittaen että arvot eivät tulisi suoraan käyttäjältä, vaan ne olisivat määriteltynä parametreina. </p>
+    <p>En kuitenkaan enää saanut tätä korjausta toimivaksi, joten en voi sitä aukottomasti todentaa.</p>
+    
+  </main>
+  
+  
+</body>
+</html>
