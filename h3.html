@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tehtävä h2</title>
+  <title>Tehtävä h3</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -45,12 +45,30 @@
     <h2>b.</h2>
     <p>Korjattu versio, käytetty obfuskointia:</p>
     <img src="obfuskointi.jpg" alt="obfuskointu" width="300">
+    <p>Tämän tehtävän ratkaisemiseen jouduin pyytämään apua koodin muotoiluun Copilotilta, koska c-kieli  että obfuskointi ovat minulle täysin vieraita. Tehtävässä on myös hyödynnetty sivua "https://promon.io/resources/knowledge-center/code-obfuscation-guide" </p>
+
+
+    <h3>c.</h3>
+    <p>Kokeilin tähän tehtävään heti strings-komentoa, vaikka tehtävän kuvaus antoikin ymmärtää ettei se pelkästään toimi. Eikä se toiminutkaan.</p>
+    <p>Tämä rivi kuitenkin kiinnitti huomioni: </p>
+    <img src="upx.jpg" alt="upx" width="300">
+    <p>Koska tätä riviä ei ollut edellisessä tehtävässä, googlasin UPX:n ja sain selville sen olevan "pakkaustyökalu" jotta binääriä olisi vaikeampaa lukea. </p>
+    <p>Latasin upx työkalun koneelleni komennolla "apt install upx -y". Sen jälkeen ajoin komennon "upx -d packd -o purettu". -d tarkoittaa "decompress" ja -o luo uuden filen jotta alkuperäistä ei ylikirjoiteta.</p>
+    <p>Sen jälkeen ajoin uudestaan "strings purettu" ja sain tämän näkymän:</p>
+    <img src="purettu.jpg" alt="purettu" width="300" >
+    <p>Seuraavaksi ajoin vain uudelleen itse ohjelman ja salasanan: </p>
+    <img src="salasana ja lippu.jpg" alt="salasana ja lippu" width="300" >
+    <p>Tehtävässä on käytetty apuna tätä blogi kirjoitusta, joka selittää asian hiukan syvällisemmin kuin mitä sen itse tein. "https://medium.com/@7HPL/unpacking-upx-in-x64-d186b2d72c70"</p>
+
     
     
 
     
-    <h2>Lähteet</h5>
+    <h4>Lähteet</h5>
     <p>Kurssin materiaali</p>
+    <p>https://promon.io/resources/knowledge-center/code-obfuscation-guide</p>
+    <p>https://medium.com/@7HPL/unpacking-upx-in-x64-d186b2d72c70</p>
+    <p>Copilot</p>
 
   </main>
   
