@@ -39,16 +39,29 @@
   <main>
     <h1>a.</h1>
     <p>Minulla meni melko pitkään saada ghidra toimimaan debianilla.<p>
-    <p>Purin packd-koodin ghidralla ja sain tämän tuloksen.</p>
+    <p>Luin packd-koodin ghidralla ja sain tämän tuloksen.</p>
     <img src="ghidra purettu.jpg" alt="ghidra näkymä" width="300">
     <p>Seuraavaks aloin kokeilla erilaisia keinoja käsitellä koodia.</p>
-    <img src="muokattu ghidra.jpg" alt="muokattua ghidraa" width="300">
-    <p></p>
+    <img src="korjattu prossa.jpg" alt="muokattua ghidraa" width="300">
+    <p>Koodin selitys riveittäin:</p>
+    <p>int main(void) eli ohjelmiston pääfunktio josta sen sen toiminta alkaa. Ohjelmalla ei ole argumentteja (void) ja palauttaa int arvon.</p>
+    <p>int result; Luo muuttujan nimeltä result. Siihen tallennetaan strcmp() function tulema.</p>
+    <p>char local_28 [32]; Luo merkkilistan nimeltä local_28. Siinä on tilaa 32 merkille.</p>
+    <p>Siihen tallennetaan salasana jonka käyttäjä kirjoittaa.</p>
+    <p>puts("Whats the password); Kirjoittaa konsoliin "What's the password?". puts() kirjoittaa uuden rivin tekstin perään ja \ merkki ennen '-merkkiä tekee siitä c-kielelle sopivan.</p>
+    <p>scanf(&%s, local_28); scanf() lukee sen syötteen joka on annettu local_28. &%s ei ole oikein määritetty, mutta en saanut "&" merkkiä millään pois koodista, joten se jäi virheelliseksi. </p>
+    <p>result = strcmp(local_28, "piilosAnAnAs"); Vertailee käyttäjän syötettä stringiin piilosAnAnAs. Palauttaa 0 jos oikein, tallennetaan result muuttujaan.</p>
+    <p>if (result == 0) vertaa result muuttujan tulosta ja jos tulos 0, se ajaa koodin blokin sisällä.</p>
+    <p>Lopuksi ohjelma joko palauttaa myöntävän vastauksen ja lipun jos salasana oli oikein, jos ei niin tekstin "sorry, no bonus".</p>
+    <p> return 0; lopettaa ohjelman.</p>
+
+    <h2>b</h2>
+    <p>Pääsin tehtävässä tähän asti, mutten sen pidemmälle. Jäin jumiin tiedoston exporttaamisen kanssa.</p>
+    <img src="jmp.jpg" alt="jmp" width="300">
     
     <h4>Lähteet</h5>
     <p>Kurssin materiaali</p>
-    <p>https://promon.io/resources/knowledge-center/code-obfuscation-guide</p>
-    <p>https://medium.com/@7HPL/unpacking-upx-in-x64-d186b2d72c70</p>
+    
     <p>Copilot</p>
 
   </main>
