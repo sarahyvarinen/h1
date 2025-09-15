@@ -45,10 +45,12 @@
     <p>Koodista löytyy heksadesimaali, se käännetään pythonilla perusluvuksi ja syötetään ohjelmaan.</p>
     <h3>x.</h3>
     
-    <p>Minulla meni melko pitkään saada ghidra toimimaan debianilla, mutta useiden java kokeilujen jälkeen sain sen toimimaan.<p>
-    <p>Luin packd-koodin ghidralla ja sain tämän tuloksen.</p>
+    <p>Minulla meni melko pitkään saada ghidra toimimaan debian versiossa 13 jonka olen ladannut virtuaalikoneelleni.<p>
+    <p>Sain sen kuitenkin toimimaan lataamalla ensin uusimman jdk julkaisun numero 21, seuraavaksi latasin ghidran zip tiedostona kurssin sivulta. </p>
+    <p>Loin uuden projektin jota Ghidra kutsuu nimellä "non shared" ja latasin siihen packd-tehtävän binäärin. Ensimmäinen kompastus kivi oli, etten tajunnut käyttää purettua versiota. Tähän tuli apua kotitehtäväsivujen vinkeistä.</p>
+    <p>Luin packd-binäärin ghidralla ja sain tämän tuloksen.</p>
     <img src="ghidra purettu.jpg" alt="ghidra näkymä" width="300">
-    <p>Seuraavaksi aloin kokeilla erilaisia keinoja käsitellä koodia.</p>
+    <p>Seuraavaksi aloin kokeilla erilaisia keinoja käsitellä koodia ja muokkasin funktioiden nimiä luettaviksi parhaan kykyni mukaan. Jouduin kysymään Copilotilta joitain funktionimiä, c-kielen ollessa minulle vieras.</p>
     <img src="korjattu prossa.jpg" alt="muokattua ghidraa" width="300">
     <p>Koodin selitys riveittäin:</p>
     <p>int main(void) eli ohjelmiston pääfunktio josta sen sen toiminta alkaa. Ohjelmalla ei ole argumentteja (void) ja palauttaa int arvon.</p>
@@ -68,6 +70,7 @@
     
     <h5>Lähteet</h5>
     <p>Kurssin materiaali</p>
+    <p>Copilotia pyydetty selittämään koodin rivejä pyynnöllä "explain the function of these rows, please", sekä auttamaan funktioiden nimeämisessä pyynnöllä "help me rename these functions, please.".</p>
     <p>Ghidra quickstart & tutorial: Solving a simple crackme https://www.youtube.com/watch?v=fTGTnrgjuGA&t=42s</p>
     
     
