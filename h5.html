@@ -37,7 +37,7 @@
     <h1>Tehtävä h5</h1>
   </header>
   <main>
-    <h2>a</h2>
+    <h2>1</h2>
     
     <p>Latasin ensimmäiseksi tehtävän zip kansion ja purin sen kansion.</p>
     <img src="puretaan unzip.jpg" alt="purettu kansio" width="300">
@@ -58,6 +58,28 @@
     <p>Koska vikana on se että "NULL" ei osoita minnekään, ratkaisin ongelman yksinkertaisesti poistamalla nuo rivit.</p>
     <p>Tässä on korjattu versio, josta on poistettu virheelliset rivit.</p>
     <img src="toimii.jpg" alt="korjattu versio" width="300">
+
+    <h3>2</h3>
+    <p>Tässä tehtävässä latasin zip kansion ja purin sen unzip lab2.zip komennolla.</p>
+    <p>Kansiossa oli sama passtr tehtävä kuin aiemminkin oli, ratkaisin sen samalla strings komennolla kuin aiemminkin.</p>
+    <p>strings passtr</p>
+    <img src="passtr uudestaan.jpg" alt="passtr" width="300">
+
+    <h4>3</h4>
+    <p>Aloitin lataamalla crackme tiedostot zip pakettina ja purin sen komennolla unzip.</p>
+    <p>Käytin komentoa make crackme03.c joka tuotti minulle ajettavan binäärin nimellä crackme03.64</p>
+    <p>Kokeilin heti strings komentoa, vaikka arvelinkin ettei tehtävä olisi niin helppo, eikä se ollutkaan:</p>
+    <img src="crackme03.jpg" alt="ei aukea" width="300">
+    <p>Kokeilin seuraavaksi breakpointeja sekä käyttämällä next komentoa käydä binääriä läpi, jos salasana löytyisi niin.</p>
+    <img src="next.jpg" alt="ei toimi" width="300">
+    <p>Mikään näistä ei auttanut, kokeilin vielä purkaa tehtävää disassemble komennolla ja sain tällaisen näkymän, josta poimin movl heksadesimaalit.</p>
+    <img src="break.jpg" alt="tämäkään ei ollut ratkaisu" width="300">
+    <p>Pyöritin näitä heksadesimaaleja netistä löytyvistä heksadesimaali stringiksi muuntimista läpi, sain erilaisia "lAmBda" vastauksia joita kokeilin.</p>
+    <img src="lambda.jpg" alt="lambda ei toimi" width="300">
+    <p>Mikään näistä ei toiminut, joten lopulta nöyrryin ja katsoin lähdekoodin josta oikea salasana sitten löytyi. Se oli "nDoEiA".</p>
+
+    <p>Kaikki tehtävät on tehty Debian 13.0, "Trixie" Linux distrossa.</p>
+    
 
     
     <h5>Lähteet</h5>
