@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä h6</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tehtävä h6, Sulaa hulluutta</h1>
+  </header>
+  <main>
+    <h1>a.</h1>
+    <p>Latasin kuvan koneelleni ja tutkin sitä lähinnä katselemalla sen ominaisuuksia tiedostossasekä käyttämällä strings komentoa, mutten saanut siitä oikein mitään irti.</p>
+    <h2>b.</h2>
+    <p>Seuraavaksi tutkin h1.jpg tiedostoa binwalk komennolla:</p>
+    <img src="h1 binwalk.jpg" alt="kuva binwalkista" width="300">
+    <p>Tämä avasi minulle aikamoisen kasan dataa, joka on melko vaikeaselkoisen oloista.</p>
+    <p>Huomasin kuitenkin, että seassa oli word tiedosto. Yritin avata sitä ja sainkin zip tiedoston poimittua seasta. En kuitenkaan valitettavasti saanut sitä auki vaikka kuinka yritin:</p>
+    <img src="ei avaa.jpg" width="300" alt="ei toimi">
+    <p>Itse tiedoston erotin alkuperäisestä binwalk komennon antamasta datasta lisäämällä komennon perään -e, eli extract. Tämän tiedon löysin "strongdm" sivustolta.</p>
+    
+    <h3>Lähteet</h3>
+    <p>Kurssin materiaali</p>
+    <p>Strongdm https://www.strongdm.com/blog/extract-unzip-tar-gz-files-linux</p>
+
+    <h4></h4>
+    <p>Latasin jadx:n kloonamalla sen githubista git clone https://github.com/skylot/jadx.git</p>
+    <p>Yritin ladata "makeacopy" ohjelmiston, jonka funktiona on digitoida raportteja android ympäristössä.</p>
+    <p>Valitettavasti minulta loppui tässä vaiheessa aika kesken, sillä en saanut itse sovelluksen koodia auki virtuaalikoneessani.</p>
+
+  </main>
+  
+  
+</body>
+</html>
