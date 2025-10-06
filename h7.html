@@ -37,7 +37,24 @@
     <h1>Tehtävä h7</h1>
   </header>
   <main>
-    <h1>1.</h1>
+    <h1>Lue/kuuntele</h1>
+    <h2>Terminology kappale valaisee nimenmukaisesti terminologiaa.</h2>
+    <p>Lähettäja ja vastaanottaja: Lähettäjän intressi on se, että kukaan muu kuin vastaanottaja ei lue lähetettyä viestiä.</p>
+    <p>Viestit ja salaus: Alkuperäinen viesti on selväkielinen, eli plaintext. Lähettäessä viesti salataan ja lopulta palautetaan takaisin selkokieliseksi tekstiski vastaanottajalle.</p>
+    <p>Kryptografia = viestien salaamisen ns. tiede.</p>
+    <p>Kryptoanalyysi = salatun tekstin murtaminen.</p>
+    <p>Kryptologia = Kryptoanalyysin ja kryptografian kattava yhteisnimike.</p>
+    <h3>Karvinen 2024: Python Basics for Hackers</h3>
+    <p>Artikkelissa kerrotaan perusteet pythonista:</p>
+    <p>Strings ja printtaus,</p>
+    <p>silmukat (lyhyet ja pitkät),</p>
+    <p>debuggaus,</p>
+    <p>väittämän tarkistus (assert),</p>
+    <p>lista-rakenteet ja xorraus</p>
+    
+
+
+    <h4>1.</h4>
     <p>Tämä tehtävä on Crypto pals-tehtävä setin ensimmäinen tehtävä. Tässä tehtävässä tulee muuntaa hexadesimaali jono base64 muotoon. </p>
     <p>Lähdin kokeilemaan tätä tehtävää pythonilla, koska se on minulle kaikista tutuin ohjelmointikieli. Koska valmista base64 kääntäjää oli sallittua käyttää, importoin sen suoraan ohjelmaan.</p>
     <p>Itse ratkaisu oli melko lyhyt ohjelma: </p>
@@ -51,7 +68,7 @@
     <p> "except ValueError: print("Virhe, tämä ei ole hexiä.")"" on lisäämäni virheenkäsittely, eli mikäli annettu merkkijono ei ole heksiä, se palauttaa tuon virhetekstin.</p>
     <p>Lopuksi vielä "if name" blokki, joka suorittaa ohjelman.</p>
 
-    <h2>2.</h2>
+    <h5>2.</h5>
     <p>Tässä tehtävässä ratkaistaan Crypto pals 2 tehtävä. Siinä tulee kirjoittaa funktio, joka tekee xorrauksen kahdelle samanpituiselle heksamerkkijonolle. Sitten tulos palautetaan samassa muodossa.</p>
     <img src="xorraus.jpg" width="400">
     <p>Eli ensin määrittelin funktion nimeltä "def fixed_xor" joka saa kaksi heksadesimaalijonoa ja paluttaa uuden jonon.</p>
@@ -61,7 +78,7 @@
     <p>if name-lohkossa määritellään kaksi heksajonoa, s1 ja s2 joita testasin suoraan tehtävän antamalla merkkijonoilla. Lopuksi kutsuin ja printtasin "fixed_xor" joka antaa tuloksen.</p>
     <img src="xorraus tulos.jpg" width="400">
 
-    <h3>3.</h3>
+    <h6>3.</h6>
     <p>Tässä tehtävässä on heksadesimaalijono joka on xorrattu yhdellä merkillä.</p>
     <img src="eka xorraus func.jpg" width="400">
     <p>Ensin määrittelin funktion single_byte_xor, joka sisältää tavujonon jonka nimesin dataksi sekä yhden kokonaisluvun, sen nimi on key.</p>
@@ -88,7 +105,7 @@
     <p>Lopputulos:</p>
     <img src="kolmosen tulos.jpg" width="400">
 
-    <h4>4.</h4>
+    <h7>4.</h7>
     <p>Tässä tehtävässä tulee etsiä xorrattu merkkijono annetusta tiedostosta. Tiedoston kopioin tekstitiedostoksi omaan hakemistooni ja syötin nimellä 4.txt</p>
     <p>Ohjelma perustuu paljon edellisen tehtävän koodiini, ehkä merkittävänä erona detect_single_char_xor_line funktio.</p>
     <p>Se lukee hex rivejä tiedostosta, testaa niitä crack_single_byt_for_bytes funktiolla ja palauttaa score, key, plaintext, index ja original_line.</p>
@@ -101,10 +118,12 @@
     <p>Tulos:</p>
     <img src="nelos xor tulos.jpg" width="400">
 
-    <h4>Lähteet</h4>
-    <p>Kurssin materiaali</p>
-    <p>Strongdm https://www.strongdm.com/blog/extract-unzip-tar-gz-files-linux</p>
-
+    <h8>Lähteet</h8>
+    <p>Kurssin materiaali https://terokarvinen.com/sovellusten-hakkerointi/</p>
+    <p>Copilot</p>
+    <p>Karvinen: https://terokarvinen.com/python-for-hackers/</p>
+    <p>Applied cryptography: https://www.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec001</p>
+    <p>patrickrbc, Cryptopals the Basics: https://patrickrbc.com/2019/04/06/cryptopals-the-basics</p>
     
 
   </main>
